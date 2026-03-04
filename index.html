@@ -494,16 +494,16 @@
     </footer>
     
 <!----MODAL -->
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="box-modal">
-        <button type="button">
+        <button class="modal-close-btn" type="button">
             <svg class="modal-cross-svg" width="8" height="8">
-              <use href="./images/svg/form-icons.svg#cross"></use>
+              <use href="./images/icons.svg#cross"></use>
             </svg>
           </button>
         <form class="form-contact">
-          <p>Leave your contacts and we will call you back</p>
-          <div class="form-group">
+          <p class="form-title">Leave your contacts and we will call you back</p>
+          <div class="form-group"> <!-- Input-Name -->
             <label class="modal-label" for="name">Name</label>
             <div class="modal-input-wrapper">
               <input
@@ -515,11 +515,11 @@
                 required
               />
               <svg class="modal-input-icon" width="18" height="24">
-                <use href="./images/svg/form-icons.svg#person"></use>
+                <use href="./images/icons.svg#person"></use>
               </svg>
             </div>
           </div>
-          <div class="form-group">
+          <div class="form-group"> <!-- Input-Tell -->
             <label class="modal-label" for="phone">Phone</label>
             <div class="modal-input-wrapper">
               <input
@@ -531,11 +531,11 @@
                 required
               />
               <svg class="modal-input-icon" width="18" height="24">
-                <use href="./images/svg/form-icons.svg#tel"></use>
+                <use href="./images/icons.svg#tel"></use>
               </svg>
             </div>
           </div>
-          <div class="form-group">
+          <div class="form-group"> <!-- Input-Email -->
             <label class="modal-label" for="email">Email</label>
             <div class="modal-input-wrapper">
               <input
@@ -547,14 +547,14 @@
                 required
               />
               <svg class="modal-input-icon" width="18" height="24">
-                <use href="./images/svg/form-icons.svg#mail"></use>
+                <use href="./images/icons.svg#mail"></use>
               </svg>
             </div>
           </div>
           <label class="modal-label" for="textarea">Comment</label>
           <textarea name="comment" id="textarea"></textarea>
-          <label class="agreement">
-            <input type="checkbox">
+          <label class="agreement"> <!-- Input-Checkbox -->
+            <input type="checkbox" value="true" name="checkbox" required>
             <span></span>
             <span>I accept the terms and conditions of the </span>
             <a href="#">Privacy Policy</a>
