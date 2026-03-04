@@ -598,6 +598,8 @@ h3 {
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* ---- Close-btn ---- */
+
 .modal-close-btn {
   position: absolute;
 
@@ -627,34 +629,50 @@ h3 {
   fill: #ffffff;
 }
 
+/* ---- Form-title ---- */
+
 .modal-title {
   font-weight: 500;
   text-align: center;
   margin-bottom: 16px;
 }
 
-.form-field-label {
-  margin-bottom: 4px;
-  font-size: 12px;
+/* ---- Form-fields ---- */
 
+.form-field-wrapper {
+  margin-bottom: 8px;
+}
+
+.form-field-label {
+  display: block; /* чтобы добавить margin-bottom */
+  margin-bottom: 4px;
+
+  font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
 
   color: #8e8f99;
 }
 
-.form-field-wrapper {
-  position: relative;
-}
-
 .form-field-input {
-  width: 360px;
+  width: 100%;
   height: 40px;
 
-  padding: 8px 16px;
+  padding-left: 38px;
 
-  border: 1px solid #4d5ae5;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
+
+  transition: border 250ms linear;
+}
+
+.form-field-input:focus {
+  border: 1px solid #4d5ae5;
+}
+
+.form-input-wrapper {
+  position: relative;
 }
 
 .form-field-icon {
