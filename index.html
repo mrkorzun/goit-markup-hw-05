@@ -502,7 +502,7 @@
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form class="form-contact">
+        <form class="form-review">
           <div class="form-field-wrapper">
             <!-- Input-Name -->
             <label class="form-field-label" for="name">Name</label>
@@ -555,7 +555,7 @@
             <!-- TextArea-Comment -->
             <label class="form-field-label" for="textarea">Comment</label>
             <textarea
-              class="form-field-message"
+              class="form-message"
               name="user_comment"
               id="textarea"
               placeholder="Text input"
@@ -563,23 +563,25 @@
             ></textarea>
           </div>
           <div class="form-checkbox-wrapper">
-            <label class="form-field-checkbox">
-              <!-- Input-Checkbox -->
-              <input
-                class="form-policy-checkbox"
-                name="privaci-policy"
-                type="checkbox"
-                value="true"
-                required
-              />
-              <div class="modal-privacy">
-                <span></span>
-                <span>I accept the terms and conditions of the </span>
-                <a href="#">Privacy Policy</a>
-              </div>
+            <!-- Input-Checkbox -->
+            <input
+              class="form-policy-checkbox"
+              id="privaci-policy-checkbox"
+              name="privaci-policy"
+              type="checkbox"
+              value="true"
+              required
+            />
+            <label
+              class="form-field-checkbox-label"
+              for="privaci-policy-checkbox"
+            >
+              <span></span>
+              accept the terms and conditions of the
+              <a class="form-link-policy" href="#">Privacy Policy</a>
             </label>
           </div>
-          <button type="submit">Send</button>
+          <button class="form-submit-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
