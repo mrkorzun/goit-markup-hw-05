@@ -557,11 +557,11 @@
               </svg>
             </div>
           </div>
-          <div class="form-field-wrapper">
+          <div class="form-textarea-wrapper">
             <!-- TextArea-Comment -->
             <label class="form-field-label" for="textarea">Comment</label>
             <textarea
-              class="form-message"
+              class="form-textarea-message"
               name="user_comment"
               id="textarea"
               placeholder="Text input"
@@ -571,7 +571,7 @@
           <div class="form-checkbox-wrapper">
             <!-- Input-Checkbox -->
             <input
-              class="form-policy-checkbox"
+              class="form-policy-checkbox visually-hidden"
               id="privaci-policy-checkbox"
               name="privaci-policy"
               type="checkbox"
@@ -582,8 +582,12 @@
               class="form-field-checkbox-label"
               for="privaci-policy-checkbox"
             >
-              <span></span>
-              accept the terms and conditions of the
+              <span class="form-custom-checkbox">
+                <svg class="form-custom-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
               <a class="form-link-policy" href="#">Privacy Policy</a>
             </label>
           </div>
