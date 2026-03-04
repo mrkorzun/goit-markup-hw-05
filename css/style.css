@@ -582,7 +582,7 @@ h3 {
   /* close modal */
   opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms linear;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
@@ -633,7 +633,7 @@ h3 {
   background-color: #e7e9fc;
   border-color: rgba(0, 0, 0, 0.1);
 
-  transition: background-color 250ms linear;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 
@@ -689,7 +689,7 @@ h3 {
   border-radius: 4px;
   background-color: transparent;
 
-  transition: border-color 250ms linear;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field-input:focus {
@@ -706,7 +706,7 @@ h3 {
 
   transform: translateY(-50%);
 
-  transition: fill 250ms linear;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* первый вариант - покраски icons через :focus-within
@@ -742,7 +742,7 @@ h3 {
 
   background-color: transparent;
 
-  transition: border-color 250ms linear;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-textarea-message:focus {
@@ -824,7 +824,7 @@ h3 {
 
   cursor: pointer;
 
-  transition: background-color 250ms linear;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-submit-btn:hover,
