@@ -515,13 +515,13 @@
         <form class="form-review">
           <div class="form-field-wrapper">
             <!-- Input-Name -->
-            <label class="form-field-label" for="name">Name</label>
+            <label class="form-field-label" for="user-name">Name</label>
             <div class="form-input-wrapper">
               <input
                 class="form-field-input"
                 type="text"
-                name="user_name"
-                id="name"
+                name="user-name"
+                id="user-name"
                 placeholder=""
                 minlength="2"
                 required
@@ -569,11 +569,11 @@
           </div>
           <div class="form-textarea-wrapper">
             <!-- TextArea-Comment -->
-            <label class="form-field-label" for="textarea">Comment</label>
+            <label class="form-field-label" for="user-comment">Comment</label>
             <textarea
               class="form-textarea-message"
-              name="user_comment"
-              id="textarea"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
               required
             ></textarea>
@@ -582,16 +582,13 @@
             <!-- Input-Checkbox -->
             <input
               class="form-policy-checkbox visually-hidden"
-              id="privaci-policy-checkbox"
-              name="privaci-policy"
+              id="user-privacy"
+              name="user-privacy"
               type="checkbox"
               value="true"
               required
             />
-            <label
-              class="form-field-checkbox-label"
-              for="privaci-policy-checkbox"
-            >
+            <label class="form-field-checkbox-label" for="user-privacy">
               <span class="form-custom-checkbox">
                 <svg class="form-custom-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#check"></use>
