@@ -821,7 +821,7 @@ h3 {
 
 .form-field-checkbox-label {
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
 
   color: #8e8f99;
@@ -837,7 +837,7 @@ h3 {
 
 .form-submit-btn {
   display: block;
-  max-width: 169px;
+  min-width: 169px;
   height: 56px;
   margin: 0 auto;
 
